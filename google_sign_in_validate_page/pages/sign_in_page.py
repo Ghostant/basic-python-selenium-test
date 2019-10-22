@@ -4,7 +4,7 @@ class SignIn():
         self.driver = driver
 
     def create_account(self):
-        self.driver.find_element_by_xpath("//div[@id='ow250']").click()
+        self.driver.find_element_by_xpath("(//div[@role='button']/span)[2]").click()
 
     def create_account_for_you(self):
-        self.driver.find_element_by_xpath('//*[@id="initialView"]/div[2]/div[3]/div/div/span[1]').click()
+        self.driver.find_element_by_xpath("//div[@role='menu']//span[@role='menuitem']/div[2]/div").click()
